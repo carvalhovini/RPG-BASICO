@@ -1,0 +1,310 @@
+#include <stdlib.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <windows.h>
+#include <time.h>
+#include <conio.h>
+
+int main(void){
+	
+	char nome[91], sobrenome[91];
+	int idade, menu, menu2, mago, assassino, suporte, barbaro, local, valor;
+	time_t start_t, end_t;
+	
+   double diff_t;
+	system("color A");
+	setlocale(LC_ALL, "Portuguese");
+	
+	printf("RPG TESTE V1.0");
+
+	printf("\t|+++++++++++++++++++++++|\n");
+    printf("\t|        BEM VINDO      |\n"); 
+    printf("\t|+++++++++++++++++++++++|\n");
+    	_sleep(500);
+    	
+    system("pause");
+    system("cls");
+    
+    printf("\t|+++++++++++++++++++++++|\n");
+    printf("\t|    VAMOS COMEÇAR      |\n");
+	printf("\t|+++++++++++++++++++++++|\n\n\n");
+	
+	printf("Loading…..\n");
+	
+	    _sleep(500);
+	
+	printf("-");
+	_sleep(500);
+	printf("-");
+	_sleep(500);
+	printf("-");
+	_sleep(500);
+	printf("--");
+	_sleep(500);
+	printf("---");
+	_sleep(500);
+	printf("----");
+	_sleep(500);
+	printf("-----");
+	_sleep(500);
+	printf("-------\n");
+	_sleep(500);
+	printf("100%%\n");
+	_sleep(500);
+	
+	
+	system("pause");
+	system("cls");
+    system("color B");  
+ 	printf("\n\t\t--------------------- //\\\\ ");
+	_sleep(200);
+	printf("\n\t\t-------------------  // ¤\\\\ ");
+		_sleep(200);
+	printf("\n\t\t-------------------  \\\\ ¤// ");
+		_sleep(200);
+	printf("\n\t\t--------------------  \\\\// ");
+		_sleep(200);
+	printf("\n\t\t--------------------  (__) ");
+		_sleep(200);
+	printf("\n\t\t--------------------  (__) ");
+		_sleep(200);
+	printf("\n\t\t--------------------  (__) ");
+		_sleep(200);
+	printf("\n\t\t--------------------- (__) ");
+		_sleep(200);
+	printf("\n\t\t-------------   \\_/\\/----\\/\\_/ ");
+		_sleep(200);
+	printf("\n\t\t------------ \\ °_ [-??????-] _° / ");
+		_sleep(200);
+	printf("\n\t\t---------------- \\_°¤ ---- ¤°_/ ");
+		_sleep(200);
+	printf("\n\t\t-------------------- \\_ ° _/ ");
+		_sleep(200);
+	printf("\n\t\t---------------------|\\_°_/| ");
+		_sleep(200);
+	printf("\n\t\t---------------------[|\\_/|] ");
+		_sleep(200);
+	printf("\n\t\t---------------------[|[¤]|] ");
+		_sleep(200);
+	printf("\n\t\t---------------------[|;¤;|] ");
+		_sleep(200);
+	printf("\n\t\t---------------------[;;¤;;] ");
+		_sleep(200);
+	printf("\n\t\t--------------------;;;;¤]|]\ ");
+		_sleep(200);
+	printf("\n\t\t-------------------;;;;;¤]|]-\ ");
+		_sleep(200);
+	printf("\n\t\t------------------;;;;;[¤]|]--\ ");
+		_sleep(200);
+	printf("\n\t\t-----------------;;;;;|[¤]|]---\ ");
+		_sleep(200);
+	printf("\n\t\t----------------;;;;;[|[¤]|]|---|          +++++++++++++++++++++++");
+		_sleep(200);
+	printf("\n\t\t---------------;;;;;[|[¤]|]|---|              BEM VINDO JOGADOR");
+		_sleep(200);
+	printf("\n\t\t----------------;;;;[|[¤]|/---/            +++++++++++++++++++++++");
+		_sleep(200);
+	printf("\n\t\t-----------------;;;[|[¤]/---/");
+		_sleep(200);
+	printf("\n\t\t------------------;;[|[¤/---/");
+		_sleep(200);
+	printf("\n\t\t-------------------;[|[/---/");
+		_sleep(200);
+	printf("\n\t\t--------------------[|/---/");
+		_sleep(200);
+	printf("\n\t\t---------------------/---/");
+		_sleep(200);
+	printf("\n\t\t--------------------/---/|]");
+		_sleep(200);
+	printf("\n\t\t-------------------/---/]|];");
+		_sleep(200);
+	printf("\n\t\t------------------/---/¤]|];;");
+		_sleep(200);
+	printf("\n\t\t-----------------|---|[¤]|];;;");
+		_sleep(200);
+	printf("\n\t\t-----------------|---|[¤]|];;;");
+		_sleep(200);
+	printf("\n\t\t------------------\--|[¤]|];;");
+		_sleep(200);
+	printf("\n\t\t-------------------\-|[¤]|];");
+		_sleep(200);
+	printf("\n\t\t---------------------\|[¤]|]");
+		_sleep(200);
+	printf("\n\t\t----------------------\\\\¤//");
+		_sleep(200);
+	printf("\n\t\t-----------------------\\|/");
+		_sleep(200);
+	printf("\n\t\t----------------------- V\n\n");
+	_sleep(400);
+	
+	system("pause");
+	system("cls");
+	system("color A");  
+    
+    printf("+++++++++++++++++++++++\n");
+    printf("|DIGITE O NOME DO INVOCADOR:\n");
+    scanf("%s", &nome);
+    printf("|DIGITE O SOBRENOME:\n");
+    scanf("%s", &sobrenome);
+
+
+    printf("OKAY %s %s\n\n", nome, sobrenome);
+    printf("QUAL E A SUA CLASSE:\n\n");
+    
+    voltar:
+    _sleep(200);
+    printf("\t 1 - MAGO\n");
+    _sleep(200);
+    printf("\t 2 - ASSASSINO\n");
+    _sleep(200);
+    printf("\t 3 - SUPORTE\n");
+    _sleep(200);
+    printf("\t 4 - BARBARO\n");
+    _sleep(200);
+    
+    printf("\n-");
+    scanf("%d", &menu);
+      
+    system("pause");
+    system("cls");
+    
+    if(menu == 1){
+    printf("SEJA BEM VINDO A TORONTUROS\n");
+    printf("- %s %s -", nome, sobrenome);
+    printf("\nO MAIS NOVO MAGO\n\n");
+    
+    printf ("DIGITE O VALOR DE 1 A 3 PARA UMA ARMA: \n");
+    scanf("%d", &mago);
+    
+    switch ( mago )
+  {
+    case 1 :
+    	printf("- %s %s - escolheu\n", nome, sobrenome);
+    printf ("CAJADO\n");
+    break;
+    
+    case 2 :
+    	printf("- %s %s - escolheu\n", nome, sobrenome);
+    printf ("ANEL DE FOGO\n");
+    break;
+    
+    case 3 :
+    	printf("- %s %s - escolheu\n", nome, sobrenome);
+    printf ("VARINHA\n");
+    break;
+ 
+    default :
+    printf ("Valor invalido!\n");
+    goto voltar;
+  }
+
+	}
+	if(menu == 2){
+    printf("SEJA BEM VINDO A TORONTUROS\n");
+    printf("- %s %s -", nome, sobrenome);
+    printf("\nO MAIS NOVO ASSASSINO\n\n");
+    
+    printf ("DIGITE O VALOR DE 1 A 3 PARA UMA ARMA: \n");
+    scanf("%d", &assassino);
+    
+    switch ( assassino )
+  {
+    case 1 :
+    	printf("- %s %s - escolheu\n", nome, sobrenome);
+    printf ("ESPADA\n");
+    break;
+    
+    case 2 :
+    	printf("- %s %s - escolheu\n", nome, sobrenome);
+    printf ("LANÇA\n");
+    break;
+    
+    case 3 :
+    	printf("- %s %s - escolheu\n", nome, sobrenome);
+    printf ("MACHADO\n");
+    break;
+ 
+    default :
+    printf ("Valor invalido!\n");
+    goto voltar;
+  }
+  
+	}
+	if(menu == 3){
+	printf("SEJA BEM VINDO A TORONTUROS\n");
+    printf("- %s %s -", nome, sobrenome);
+    printf("\nO MAIS NOVO SUPORTE\n\n");
+    
+        printf ("DIGITE O VALOR DE 1 A 3 PARA UMA ARMA: \n");
+    scanf("%d", &suporte);
+    
+    switch ( suporte )
+  {
+    case 1 :
+    	printf("- %s %s - escolheu\n", nome, sobrenome);
+    printf ("ESCUDO GRANDE\n");
+    break;
+    
+    case 2 :
+    	printf("- %s %s - escolheu\n", nome, sobrenome);
+    printf ("ARMADURA LEVE\n");
+    break;
+    
+    case 3 :
+    	printf("- %s %s - escolheu\n", nome, sobrenome);
+    printf ("PROTEÇÃO DIVINA\n");
+    break;
+ 
+    default :
+    printf ("Valor invalido!\n");
+    goto voltar;
+  }
+  
+	}
+	if(menu == 4){
+	printf("SEJA BEM VINDO A TORONTUROS\n");
+    printf("- %s %s -\n", nome, sobrenome);
+    printf("\nO MAIS NOVO BARBARO\n\n");
+    
+        printf ("DIGITE O VALOR DE 1 A 3 PARA UMA ARMA: \n");
+    scanf("%d", &barbaro);
+    
+    switch ( barbaro )
+  {
+    case 1 :
+    	printf("- %s %s - escolheu\n", nome, sobrenome);
+    printf ("tESPADA GRANDE\n");
+    break;
+    
+    case 2 :
+    	printf("- %s %s - escolheu\n", nome, sobrenome);
+    printf ("ADAGAS\n");
+    break;
+    
+    case 3 :
+    	printf("- %s %s - escolheu\n", nome, sobrenome);
+    printf ("MACHADO FLAMEJANTE\n");
+    break;
+ 
+    default :
+    printf ("Valor invalido!\n");
+    goto voltar;
+  }
+  
+	}
+  
+    if(menu > 4){
+    	printf("\n*numero invalido*\n");
+    	goto voltar;
+	}
+	
+	printf("\t\t- VAMOS COMEÇAR ESSA JORNADA -\n\n");
+	printf("");
+	
+	
+	
+	
+	
+	
+	return(0);
+}
